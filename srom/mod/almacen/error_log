@@ -1,0 +1,12 @@
+[19-Jul-2018 21:49:39 UTC] PHP Warning:  include(validasesion.php): failed to open stream: No such file or directory in /home/taycosam/public_html/srom/mod/almacen/existencias.php on line 1
+[19-Jul-2018 21:49:39 UTC] PHP Warning:  include(validasesion.php): failed to open stream: No such file or directory in /home/taycosam/public_html/srom/mod/almacen/existencias.php on line 1
+[19-Jul-2018 21:49:39 UTC] PHP Warning:  include(): Failed opening 'validasesion.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/taycosam/public_html/srom/mod/almacen/existencias.php on line 1
+[19-Jul-2018 22:07:36 UTC] PHP Warning:  include(validasesion.php): failed to open stream: No such file or directory in /home/taycosam/public_html/srom/mod/almacen/existencias.php on line 1
+[19-Jul-2018 22:07:36 UTC] PHP Warning:  include(validasesion.php): failed to open stream: No such file or directory in /home/taycosam/public_html/srom/mod/almacen/existencias.php on line 1
+[19-Jul-2018 22:07:36 UTC] PHP Warning:  include(): Failed opening 'validasesion.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/taycosam/public_html/srom/mod/almacen/existencias.php on line 1
+[20-Jul-2018 20:46:11 UTC] PHP Warning:  include(validasesion.php): failed to open stream: No such file or directory in /home/taycosam/public_html/srom/mod/almacen/existencias.php on line 1
+[20-Jul-2018 20:46:11 UTC] PHP Warning:  include(validasesion.php): failed to open stream: No such file or directory in /home/taycosam/public_html/srom/mod/almacen/existencias.php on line 1
+[20-Jul-2018 20:46:11 UTC] PHP Warning:  include(): Failed opening 'validasesion.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/taycosam/public_html/srom/mod/almacen/existencias.php on line 1
+[23-Aug-2018 16:29:54 America/Mexico_City] PHP Warning:  include(validasesion.php): failed to open stream: No such file or directory in /home/taycosam/public_html/SRPRUEBAS/mod/almacen/existencias.php on line 1
+[23-Aug-2018 16:29:54 America/Mexico_City] PHP Warning:  include(validasesion.php): failed to open stream: No such file or directory in /home/taycosam/public_html/SRPRUEBAS/mod/almacen/existencias.php on line 1
+[23-Aug-2018 16:29:54 America/Mexico_City] PHP Warning:  include(): Failed opening 'validasesion.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/taycosam/public_html/SRPRUEBAS/mod/almacen/existencias.php on line 1

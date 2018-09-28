@@ -1,0 +1,194 @@
+body{
+	/*background: #EFBF14;*/
+    /*background: url(../img/back1.jpg) no-repeat fixed center;*/
+    background-size: cover;
+	padding-top: 50px !important;
+
+
+}
+
+html{ background: #000;}
+
+#navbar{
+	position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 20;
+}
+
+
+.back1{
+    background: url(../img/back1.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.back2{
+    background: url(../img/back2.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.backColor{
+    background: white; color: #000;
+}
+
+.backTrans{
+    background: rgba(45, 45, 45, 0.5);
+    color: #FFF;
+    border: transparent;
+}
+
+.PanelColor{
+	background: url(./img/back1.jpg); color: #000;
+}
+
+.AntiRL{
+	padding-left: 0px; padding-right: 0px;
+}
+
+.AntiBtm{
+	margin-bottom: 0px;
+}
+
+.AntiFL{
+	
+}
+
+
+.carousel-inner .item img{
+    /*height: 215px;*/
+}
+
+.map {
+    width:100%;
+    height:500px;   
+}
+
+
+.map-wrap {
+    position:relative; 
+}
+    
+.overlay {
+    width:100%;
+    min-height:500px; 
+    position:absolute; 
+    top:0;
+}
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand{
+    color: #FFF;
+}
+
+.footer{
+    padding: 20px;
+    background-color: #000;
+    border-color: #080808;
+    color: #FFF;
+}
+
+#carousel-example-generic{
+    background: #333;
+}
+
+/*iconos mision vision valores*/
+.icon-mvv{    
+    font-size: 60px;
+}
+
+.panel-default{
+    margin-bottom: 0px; border: solid 0px transparent;
+}
+
+.panel-default > .panel-heading{
+    background: transparent; border: solid 0px transparent;
+}
+/*
+.media-body{
+    width: auto;
+}
+*/
+.LV_validation_message{
+    font-weight:bold;
+    margin:0 0 0 5px;
+}
+
+.LV_valid {
+    color:#00CC00;
+}
+    
+.LV_invalid {
+    color:#CC0000;
+}
+    
+.LV_valid_field,
+input.LV_valid_field:hover, 
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover, 
+textarea.LV_valid_field:active {
+    border: 1px solid #00CC00;
+}
+    
+.LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active {
+    border: 1px solid #CC0000;
+}
+
+.producto{
+    background-size: cover !important; 
+    width: 150px; 
+    height: 150px; 
+    display: inline-block; 
+    border: solid #D4D4D4;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+
+.producto:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+    border: solid #fab32e;
+}
+
+.VincProd{
+    width: 150px; 
+    height: auto; 
+    display: inline-block;
+}
+
+.VincProd label{
+    font-size: 11px;
+    height: 50px;
+}
+
+.navbar-inverse{
+    background: #fab32e;
+    color: #000;
+    border-color: transparent;
+}
+
+.logoTayco{
+    background: url(../img/LOGOTAYCO.jpg) center no-repeat;
+    background-size: contain;
+    width: 200px;
+    margin-left: 5px !important;
+}
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand{
+    color: #000;
+    font-weight: bold;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #222;
+    border-color: #222;
+}

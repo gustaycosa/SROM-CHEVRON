@@ -10,7 +10,7 @@ try{
         
         //parametros de la llamada
         $parametros = array();
-        $parametros['Empresa'] = 'TAYCOSA';
+        $parametros['Empresa'] = 'EAGLE';
         $parametros['Movimiento'] = $Movimiento;
 		
         //Invocación al web service

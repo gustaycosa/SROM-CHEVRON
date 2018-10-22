@@ -12,7 +12,7 @@ try{
         
         //parametros de la llamada
         $parametros = array();
-        $parametros['Id_Empresa'] = 'TAYCOSA';
+        $parametros['Id_Empresa'] = 'EAGLE';
         $parametros['Mes'] = $Mes;
         $parametros['Ejercicio'] = $Ejercicio;
 		$parametros['Moneda'] = $Moneda;

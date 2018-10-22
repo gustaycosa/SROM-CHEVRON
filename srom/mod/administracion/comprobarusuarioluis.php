@@ -29,7 +29,7 @@ $tipoperfil = $Datos[0]->$Columnas[6];
 
  if ($valido==0) {
   echo '<script language="JavaScript"> alert("Usuario '.$usuario.' no existe, intente de nuevo.");</script>';
-  echo '<script language= JavaScript>self.location = "http://www.taycosa.mx"</script>';
+  echo '<script language= JavaScript>self.location = "http://www.EAGLE.mx"</script>';
   //echo $valido;
  }
  else

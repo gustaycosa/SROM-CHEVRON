@@ -65,7 +65,7 @@
                 },
                 {
                     extend: 'print',
-                    message: 'PDF creado desde el sistema\n en linea taycosa.',
+                    message: 'PDF creado desde el sistema\n en linea EAGLE.',
                     text: 'Imprimir',
                     exportOptions: {
                         stripHtml: false,

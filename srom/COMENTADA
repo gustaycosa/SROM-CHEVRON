@@ -7,7 +7,7 @@
 <?php
 $TituloPantalla = 'Reporte de edos. financieros';    
 
-$WebService="http://dwh.taycosa.mx/WEB_SERVICES/DataLogs.asmx?wsdl";
+$WebService="http://dwh.eimportacion.com.mx/WEB_SERVICES/DataLogs.asmx?wsdl";
 
 $Columnas = array("Modulo","Grupo","forma","Descripcion","InsertarDatos","ActualizarDatos","EliminarDatos","LeerDatos");//COLUMNAS 
     
@@ -124,7 +124,7 @@ echo'<style>
 			$("#navbar > a").removeClass('vna-act').addClass('vna-min');
             var IDFRM = $( this ).attr("id");
             contador = contador + 1;
-            var modal2 = "<iframe id='ifm"+IDFRM+"_"+contador+"' name='"+IDFRM+"' src='mod/"+modulo+"/"+IDFRM+".php?e="+<?php echo $Id_Usuario;?>+"&a=taycosa"+"' frameborder='0' class='col-sm-12 col-xs-12 col-md-12 col-lg-12'></iframe>";
+            var modal2 = "<iframe id='ifm"+IDFRM+"_"+contador+"' name='"+IDFRM+"' src='mod/"+modulo+"/"+IDFRM+".php?e="+<?php echo $Id_Usuario;?>+"&a=EAGLE"+"' frameborder='0' class='col-sm-12 col-xs-12 col-md-12 col-lg-12'></iframe>";
             var ventana = "<a id='"+IDFRM+"_"+contador+"' class='vna-act'>"+titulomin+"<button class='close' name='"+IDFRM+"_"+contador+"'><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></button></a>";
             $( "#principal" ).append( modal2 );
             $( "#navbar" ).append( ventana );
@@ -146,7 +146,7 @@ echo'<style>
             var ID = $( this ).attr("id");
             var SRC = $( this ).attr("ref");
             contador = contador + 1;
-            var modal2 = "<iframe id='ifm"+IDFRM+"' name='"+IDFRM+"' src='"+IDFRM+".php?e="+<?php echo $Id_Usuario;?>+"&a=taycosa"+"' frameborder='0' class='col-sm-12'></iframe>";
+            var modal2 = "<iframe id='ifm"+IDFRM+"' name='"+IDFRM+"' src='"+IDFRM+".php?e="+<?php echo $Id_Usuario;?>+"&a=EAGLE"+"' frameborder='0' class='col-sm-12'></iframe>";
             var ventana = "<a id='"+IDFRM+"' class='vna-act'>"+IDFRM+"<button class='close' name='"+IDFRM+"_"+contador+"'>x</button></a>";
             $( "#principal" ).append( modal2 );
             $( "#navbar" ).append( ventana );

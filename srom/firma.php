@@ -107,7 +107,7 @@
                       margin-bottom: 8px; 
                       color: steelblue"
              >
-              gustavo.hernandez@taycosa.mx
+              gustavo.hernandez@EAGLE.mx
             </a>
             <a 
                href="" 
@@ -116,7 +116,7 @@
                       margin-bottom: 8px; 
                       color: steelblue"
              >
-              http://www.taycosa.mx
+              http://www.EAGLE.mx
             </a><!--
               <a 
                href="http://escuela.digital/facebook" 
@@ -225,7 +225,7 @@
     }).keyup();
 
     $("#Email").keyup(function () {
-      var value = $(this).val()+"@taycosa.mx";
+      var value = $(this).val()+"@EAGLE.mx";
       $("#Email1").text(value);
     }).keyup();
 

@@ -11,7 +11,7 @@ try{
         
         //parametros de la llamada
         $parametros = array();
-        $parametros['Empresa'] = 'TAYCOSA';
+        $parametros['Empresa'] = 'EAGLE';
         $parametros['Cve_Mecanico'] = $CveMecanico;
         $parametros['FechaIni'] = $FechaIni;
 		$parametros['FechaFin'] = $FechaFin;

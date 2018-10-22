@@ -17,7 +17,7 @@
               <div class="form-group">
                   <label for="inputFechaIni">Empresa:</label>
                   <select id="CmbEmpresa" name="CmbEmpresa" class="form-control">
-                      <option>TAYCOSA</option>
+                      <option>EAGLE</option>
                   </select>
               </div>
               <div class="form-group">

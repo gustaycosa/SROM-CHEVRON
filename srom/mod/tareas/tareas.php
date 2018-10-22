@@ -3,9 +3,9 @@
 <html class="no-js">
 
 <?php include("../../funciones.php"); ?>
-<?php echo Cabecera('Mis tareas Taycosa'); ?>
+<?php echo Cabecera('Mis tareas EAGLE'); ?>
 <?php
-    $TituloPantalla = 'Mis tareas Taycosa';  
+    $TituloPantalla = 'Mis tareas EAGLE';  
 	//$Arreglo = array("Nombre","Saldo");
 	//echo PasaArreglo($Arreglo);
 ?>

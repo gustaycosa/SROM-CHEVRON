@@ -4,7 +4,7 @@
     try{
         if ($_POST){
             $VarID =  $_POST["TxtClave"]; 
-            $WebService = 'http://dwh.taycosa.mx/web_services/Datalogs.asmx?wsdl';
+            $WebService = 'http://dwh.eimportacion.com.mx/web_services/Datalogs.asmx?wsdl';
             $parametros = array();
             $parametros['Id_Maq'] = $VarID;
             $WS = new SoapClient($WebService, $parametros);

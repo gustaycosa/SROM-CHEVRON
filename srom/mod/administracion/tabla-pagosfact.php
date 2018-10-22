@@ -3,7 +3,7 @@
 try{
 if ($_POST){
 ini_set("soap.wsdl_cache_enabled", "0");
-$empresa = 'TAYCOSA';
+$empresa = 'EAGLE';
 $tipo = $_POST["radpag"];
 $moneda = $_POST["CmbMoneda"];
 $fini = $_POST["Fini"];

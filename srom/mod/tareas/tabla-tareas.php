@@ -7,7 +7,7 @@ try{
         $Ejercicio =  $_POST["TxtEjercicio"]; 
         //parametros de la llamada
         $parametros = array();
-        $parametros['Empresa'] = 'TAYCOSA';
+        $parametros['Empresa'] = 'EAGLE';
         $parametros['Mes'] = $Mes;
         $parametros['Ejercicio'] = $Ejercicio;
         //ini_set("soap.wsdl_cache_enabled", "0");

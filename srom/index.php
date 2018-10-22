@@ -11,14 +11,14 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-	<title>TAYCO DHW</title>
+	<title>EAGLE DHW</title>
 	<meta charset=utf-8>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="Venta de maquinaria agricola y de construccion " />
 	<meta name="keywords" content="" />
-	<meta name="author" content="TAYCO SA DE CV" />
+	<meta name="author" content="EAGLE SA DE CV" />
     <!-- Load css styles -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />

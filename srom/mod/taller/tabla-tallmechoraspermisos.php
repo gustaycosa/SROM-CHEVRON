@@ -8,7 +8,7 @@ try{
         $Empleado =  $_POST["TxtClave"]; 
         
         $parametros = array();
-        $parametros['Empresa'] = 'TAYCOSA';
+        $parametros['Empresa'] = 'EAGLE';
         $parametros['Mes'] = $Mes;
         $parametros['Ejercicio'] = $Ejercicio;
         $parametros['Empleado'] = $Empleado;

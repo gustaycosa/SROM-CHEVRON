@@ -8,7 +8,7 @@ try{
         $Mes =  $_POST["TxtMes"]; 
         
         $parametros = array();
-        $parametros['Empresa'] = 'TAYCOSA';
+        $parametros['Empresa'] = 'EAGLE';
         $parametros['Mes'] = $Mes;
         $parametros['Ejercicio'] = $Ejercicio;
         $WS = new SoapClient($WebService,$parametros);

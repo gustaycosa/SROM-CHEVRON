@@ -7,7 +7,7 @@ ini_set("soap.wsdl_cache_enabled", "0");
 try{ 
     
     $ID='0';
-    $empresa='TAYCOSA';
+    $empresa='EAGLE';
     $parametros = array();
     $parametros['sId_Empresa']=$empresa;
     $parametros['iId']=$ID;

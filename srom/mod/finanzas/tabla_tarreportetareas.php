@@ -9,7 +9,7 @@ try{
         
         //parametros de la llamada
         $parametros = array();
-        $parametros['Empresa'] = 'TAYCOSA';
+        $parametros['Empresa'] = 'EAGLE';
         $parametros['Mes'] = $Mes;
         $parametros['Ejercicio'] = $Ejercicio;
 

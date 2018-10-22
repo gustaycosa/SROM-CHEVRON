@@ -8,7 +8,7 @@ try{
         $Ffin =  $_POST["Ffin"]; 
         
         $parametros = array();
-        $parametros['Id_Empresa'] = 'TAYCOSA';
+        $parametros['Id_Empresa'] = 'EAGLE';
         $parametros['FechaIni'] = $Fini;
         $parametros['FechaFin'] = $Ffin;
         $parametros['Moneda'] = $Moneda;
@@ -24,7 +24,7 @@ try{
         $Ffin =  $_POST["Ffin"]; 
         
         $parametros = array();
-        $parametros['Id_Empresa'] = 'TAYCOSA';
+        $parametros['Id_Empresa'] = 'EAGLE';
         $parametros['FechaIni'] = $Fini;
         $parametros['FechaFin'] = $Ffin;
         $parametros['Moneda'] = $Moneda;

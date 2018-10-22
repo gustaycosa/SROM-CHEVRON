@@ -28,7 +28,7 @@
                                <option class='col-sm-12' value='ROMO'>OSCAR ALONSO ROJAS MUÑOZ</option>
                             </select>
                       </div>
-                    <input type="hidden" class="form-control" id="TxtClave" name="TxtClave" value="TAYCOSA" placeholder="Ingrese ejercicio">
+                    <input type="hidden" class="form-control" id="TxtClave" name="TxtClave" value="EAGLE" placeholder="Ingrese ejercicio">
                                         <button type="submit" id="btnEnviar" class="btn btn-primary btn-sm" onMouseOver="">                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Consultar</button>                     <button type="button" id="btnExcel" class="btn btn-success btn-sm" onMouseOver="">                         <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Excel</button>                     <button type="button" id="btnPDF" class="btn btn-danger btn-sm" onMouseOver="">                         <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> PDF</button>                     <button type="button" id="btnPrint" class="btn btn-default btn-sm" onMouseOver="">                         <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Imprimir</button>
                 </form>
                 <div class="respuesta"></div>                 

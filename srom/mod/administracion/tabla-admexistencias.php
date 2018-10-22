@@ -4,7 +4,7 @@ try{
     
     if ($_POST){
 
-        $Empresa = "TAYCOSA";
+        $Empresa = "EAGLE";
         $Division = $_POST["Cmbdivisiones"]; 
         //$Depto = $_POST["Cmbdeptos"];
         $Familia = $_POST["Cmbfamilia"];

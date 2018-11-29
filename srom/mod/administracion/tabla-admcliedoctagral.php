@@ -3,7 +3,7 @@
 try{ 
     
     if ($_POST){
-        
+        ini_set("soap.wsdl_cache_enabled", "0");
         $Empresa = $_POST["CmbEmpresa"];
         $A =  $_POST["Ffin"]; 
         $De = $_POST["Fini"];
@@ -20,6 +20,8 @@ try{
         $parametros['sMoneda'] = $Moneda;
         //ini_set("soap.wsdl_cache_enabled", "0");
         //Invocación al web service
+        echo json_encode($parametros);
+        echo "<Br>";
         $WS = new SoapClient($WebService, $parametros);
         //recibimos la respuesta dentro de un objeto
         $result = $WS->Inf_Cli_EstadoCuentaGral($parametros);

@@ -53,6 +53,7 @@ for($i=0; $i<count($Datos); $i++){
 ?>
 
     <script type="text/javascript"> 
+        var ref = '';
         var datos = 
         <?php 
             echo json_encode($arreglo);
@@ -79,9 +80,17 @@ for($i=0; $i<count($Datos); $i++){
                     { 'title': <?php echo "'".$EjeAntAcum."'"; ?>, 'width': '120px', className: "text-right", 'targets': 4}
                 ],
                 "createdRow": function ( row, data, index ) {
-                    
-                    var ref = '';
+                    $(row).attr({ id:data.Id_ConceptoCtb});
+					$(row).addClass(data.REF);
+                    $(row).addClass(data.TF);
+                    if ( data.TF != 'T1' ){
+                        $(row).hide();
+                        $(row).addClass(ref);
+                    }
+                    else if( data.TF == 'T1'){ref =data.Id_ConceptoCtb;}
+
                     //console.log(data);
+                    /*
                     if ( data.TF == 'T1' ) {
                         ref = data.ConceptoCtb;
                         $(row).addClass('T1');
@@ -108,12 +117,12 @@ for($i=0; $i<count($Datos); $i++){
                           //ref:ref
                           //ref:ref
                         });
-                    }
+                    }*/
                 },
             dom: 'lfBrtip',    
             paging: false,
             searching: true,
-            ordering: true,
+            ordering: false,
             buttons: [
                 {
                     extend: 'copy',
@@ -297,13 +306,20 @@ for($i=0; $i<count($Datos); $i++){
         } );
         //FUNCION DE PLATILLOS MENUS
         $(function(){
-
-            $('.T1').click(function() {                
+                  $('#grid tr').click(function() {
+				var ids = $( this ).attr("id");
+                if ($('.'+ids).css("display") != "none" ) {
+                    $('.'+ids).hide(); 
+                }else{
+                    $('.'+ids).show(); 
+                }
+            });
+            /*$('.T1').click(function() {                
                 if ($('.N').css("display") != "none" ) {
                     $('.N').hide(); 
                 }else{
                     $('.N').show(); 
                 }
-            });
+            });*/
         });
     </script>

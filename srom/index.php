@@ -52,7 +52,7 @@
 		}
 	</script>
     <style>
-        @import url(http://fonts.googleapis.com/css?family=Roboto);
+        @import url(https://fonts.googleapis.com/css?family=Roboto);
 
         /****** LOGIN MODAL ******/
         .loginmodal-container {
@@ -208,7 +208,7 @@
 
 		var password = new LiveValidation('password');
 		password.add( Validate.Presence );
-		password.add( Validate.Length, { minimum: 2, maximum: 12 } );
+		password.add( Validate.Length, { minimum: 2, maximum: 20 } );
 
 
 	});

@@ -12,7 +12,7 @@ try{
         $Solicita =  $_POST["CmbNOMBRESUSUARIOWEB"]; 
         $Responsable =  $_POST["TxtEjercicio"]; 
         $Departamento =  $_POST["CmbDepto"]; 
-
+        $stipo =$_POST["Cmbstipo"]; 
         //parametros de la llamada
         
         //parametros de la llamada
@@ -25,6 +25,8 @@ try{
         $parametros['iSolicita'] = $Solicita;
         $parametros['iResponsable'] = $Responsable;
         $parametros['sDepto'] = $Departamento;
+        $parametros['sTipo'] = $stipo;
+        //echo json_encode($parametros);
 
 /*        echo'<script>alert("'.$Empresa.'-'.$Estatus.'-'.$FechaIni.'-'.$FechaFin.'-'.$Sucursal.'-'.$Solicita.'-'.$Responsable.'-'.$Departamento.'");</script>';*/
         $WS = new SoapClient($WebService, $parametros);
@@ -90,11 +92,12 @@ for($i=0; $i<count($Datos); $i++){
                     { "title": "TOTAL",  'width':'60px', className: "text-right", 'targets': 5},
                     { "title": "ESTATUS",  'width':'60px', className: "text-left", 'targets': 6},
                     { "title": "",  'width':'60px', className: "text-left", 'targets': 7},
-                    { "title": "",  'width':'60px', className: "text-left", 'targets': 8}
+                    { "title": "",  'width':'60px', className: "text-left ", 'targets': 8}
                 ],
             'createdRow': function ( row, data, index ) {
                 $(row).attr({ id:data.idAumento,mov:data.Pedido});
-                //$(row).addClass('tar');
+                $(row).find('.autok').addClass('btn-success');
+                $(row).find('.autcn').addClass('btn-danger');
             },
             dom: 'lfBrtip',    
             paging: false,
@@ -237,7 +240,6 @@ for($i=0; $i<count($Datos); $i++){
         $('#grid tbody').on( 'click', 'tr', function () {
             $(this).toggleClass('selected');
             var id = $(this).attr("id");
-
             myArray.push(id);
 /*            jQuery.each(myArray, function(i, val) {
               $("#ArrayCap").append(i + " : " + val + ",");          

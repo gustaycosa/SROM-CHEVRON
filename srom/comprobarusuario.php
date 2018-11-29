@@ -1,4 +1,5 @@
 <?php 
+ ini_set("soap.wsdl_cache_enabled", "0");
 $WebService="http://dwh.eimportacion.com.mx/WEB_SERVICES/DataLogs.asmx?wsdl";
 
 if (!isset($_SESSION)) {
@@ -32,6 +33,8 @@ $Datos = $obj->NewDataSet->Table;
 $valido = $Datos[0]->$Columnas[0];
 $tipo = $Datos[0]->$Columnas[3];
 $Id_Usuario = $Datos[0]->$Columnas[0];
+$NombreUsuario= $Datos[0]->$Columnas[1];
+$Empresa = $Datos[0]->$Columnas[3];
 $perfil = $Datos[0]->$Columnas[5];
 $tipoperfil = $Datos[0]->$Columnas[6];
 

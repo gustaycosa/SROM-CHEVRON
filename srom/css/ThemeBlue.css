@@ -139,28 +139,25 @@ body::-webkit-scrollbar-thumb {
 .ifmOpen{height: 100%; padding: 0px !important;/*display: block;*/}
 .ifmMini{height: 100%; padding: 0px !important; /*display: none;*/}
 
-.t1{
+.T1{
     font-weight: bolder;
 	background: #f8fbff !important;
 }
-.t2{
+.T2{
     font-weight: bolder;
     font-style: italic;
-    text-decoration: underline;
 	background: #dee6ff !important;
 }
-.t3{
+.T3{
     font-weight: bolder;
     font-style: italic;
-    text-decoration: underline;
 	background: #a5c5ff !important;
 }
-.N{background:#fff !important;}
-.t3 td:nth-child(1){text-align: left !important; padding-left: 10px !important;}
-.t2 td:nth-child(1){text-align: left !important; padding-left: 20px !important;}
-.t1 td:nth-child(1){text-align: left !important; padding-left: 30px !important;}
-.N td:nth-child(1){text-align: left !important; padding-left: 30px !important;}
-
+.N{background:#fff !important;padding-left: 1.8em; !important;}
+.T3 td:nth-child(1){text-align: left !important; padding-left: 1.4em; !important;}
+.T2 td:nth-child(1){text-align: left !important; padding-left: 1.2em; !important;}
+.T1 td:nth-child(1){text-align: left !important;}
+.N td:nth-child(1){text-align: left !important;  padding-left: 2.8em; !important;}
 .producto{
     background-size: cover !important; 
     width: 150px; 

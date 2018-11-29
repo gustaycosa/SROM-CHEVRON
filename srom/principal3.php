@@ -111,7 +111,7 @@ echo'<style>
 			$("#navbar > a").removeClass('vna-act').addClass('vna-min');
             var IDFRM = $( this ).attr("id");
             contador = contador + 1;
-            var modal2 = "<iframe id='ifm"+IDFRM+"_"+contador+"' name='"+IDFRM+"' src='mod/"+modulo+"/"+IDFRM+".php?e="+<?php echo $Id_Usuario;?>+"&a=EAGLE"+"' frameborder='0' class='col-sm-12 col-xs-12 col-md-12 col-lg-12'></iframe>";
+            var modal2 = "<iframe id='ifm"+IDFRM+"_"+contador+"' name='"+IDFRM+"' src='mod/"+modulo+"/"+IDFRM+".php?&e="+<?php echo $Id_Usuario;?>+"&a=EAGLE"+"' frameborder='0' class='col-sm-12 col-xs-12 col-md-12 col-lg-12'></iframe>";
             var ventana = "<a id='"+IDFRM+"_"+contador+"' class='vna-act'>"+titulomin+"<button class='close' name='"+IDFRM+"_"+contador+"'><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></button></a>";
             $( "#principal" ).append( modal2 );
             $( "#navbar" ).append( ventana );
@@ -195,7 +195,7 @@ echo'<style>
              var Digital=new Date()
              var hours=Digital.getHours()
              var minutes=Digital.getMinutes()
-             var seconds=Digital.getSeconds()
+             //var seconds=Digital.getSeconds()
              var dn="PM"
              if (hours<12)
              dn="AM"
@@ -205,10 +205,11 @@ echo'<style>
              hours=12
              if (minutes<=9)
              minutes="0"+minutes
-             if (seconds<=9)
-             seconds="0"+seconds
+             //if (seconds<=9)
+             //seconds="0"+seconds
             myclock=hours+":"+minutes+":"
-             +seconds+" "+dn
+             //+ seconds
+            +" "+dn;
             if (document.layers){
             document.layers.liveclock.document.write(myclock)
             document.layers.liveclock.document.close()

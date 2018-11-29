@@ -2,9 +2,9 @@
 <html class="no-js">
 
 <?php include("../../funciones.php"); ?>
-<?php echo Cabecera('Autorizaciones de compra'); ?>
+<?php echo Cabecera('Autorizaciones'); ?>
 <?php
-    $TituloPantalla = 'Autorizaciones de compra';  
+    $TituloPantalla = 'Autorizaciones';  
 
 ?>
 
@@ -68,7 +68,17 @@
                             
                         </div>
                     </div>
-                    <div class="col-sm-12 ">
+                    
+                    <div class="col-sm-6 ">
+                        <label for="inputtext3" class="col-sm-3 control-label">Tipo de Autorización:</label>
+                        <div class="col-sm-9">
+                            <select id="Cmbstipo" name="Cmbstipo" class="col-sm-12 form-control">
+                                <option class="col-sm-12" value="1">Solicitud de Pago</option>
+                                <option class="col-sm-12" value="2">Orden de Compra</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 " style="padding: 1em;">
 
                         <button type="submit" id="btnEnviar2" class="btn btn-primary btn-sm" onMouseOver="">Consultar</button>
                         <button type="button" id="btnNuevo" class="btn btn-primary btn-sm" onMouseOver="" data-toggle="modal" data-target="#mdlnvo">Nuevo</button>
@@ -137,8 +147,10 @@
                 success: function(data) {
                     $('#CargaGif').hide();
                     $('#mdlcom').modal('hide');
+                    console.log(data);
                     //$(".result").html(data);
                     alert('Tarea agregada :)');
+                    
                     //$('#grid').DataTable().draw();
                 },
                 error: function(error) {
@@ -163,7 +175,8 @@
                 success: function(data) {
                     //$('#btnEnviar').removeAttr('disabled');
                     $('#CargaGif').hide();
-                    alert('Autorizacion exitosa');
+                     alert('Autorizacion exitosa');
+                     console.log(data);
                     $('#btnEnviar2').click();
                     //$('#gridcom').DataTable().draw();
                 },
@@ -189,8 +202,9 @@
                 success: function(data) {
                     //$('#btnEnviar').removeAttr('disabled');
                     $('#CargaGif').hide();
-                    alert('Autorizacion exitosa');
+                    alert('Rechazo exitosa');
                     $('#btnEnviar2').click();
+                    console.log(data);
                     //$('#gridcom').DataTable().draw();
                 },
                 error: function(error) {

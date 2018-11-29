@@ -5,7 +5,7 @@ try{
     if ($_POST){
         $aRows = $_POST["info"];
 
-        
+        echo "Si entramos ";
         //$WebService="http://192.168.1.1/WEB_SERVICES/DataLogs.asmx?wsdl";
         //parametros de la llamada
         $parametros = array();

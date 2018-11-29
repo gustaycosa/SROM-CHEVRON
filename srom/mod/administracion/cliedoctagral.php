@@ -18,6 +18,13 @@
             </div>
             <div class="panel-body">
                 <form id="formulario" method="POST" class="form-inline">
+                    <div class="form-group">
+                        <label for="inputtext3" class="control-label">Empresa:</label>
+                        <select id="CmbEmpresa" name="CmbEstatus" class="form-control">
+                            <option class="col-sm-12" value="EAGLE">EAGLE</option>
+                            <option class="col-sm-12" value="LINCOLN">LINCOLN</option>
+                        </select>   
+                    </div>
                     <input type="hidden" class="form-control" id="TxtClave" name="TxtClave" placeholder="Buscar cliente">
                     <div class="form-group">
                         <?php echo CmbMoneda();?>
@@ -63,7 +70,7 @@
                 $.ajax({
                     type: "POST",
                     url: 'tabla-admcliedoctagral.php',
-                    data: $("form").serialize(), // Adjuntar los campos del formulario enviado.
+                    data: $("formulario").serialize(), // Adjuntar los campos del formulario enviado.
                     success: function(data) {
                         $('#CargaGif').hide();
                         $('#btnEnviar').removeAttr('disabled');

@@ -247,7 +247,7 @@
         echo '<script type="text/javascript" src="jquery.min.js"></script>';
         echo '<script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>';        
         */
-        echo '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>';
+        echo '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>';
         echo '<script type="text/javascript" src="jquery.min.js"></script>';
         //echo '<script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>';
         //echo '<script type="text/javascript" src="js/jquerymobilelight.js"></script>';
@@ -285,7 +285,7 @@
 
 
     function GraphScript(){
-        echo '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>';
+        echo '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>';
         echo '<script type="text/javascript" src="jquery.min.js"></script>';
         echo '<script type="text/javascript" src="js/bootstrap.js"></script>';
         echo '<script type="text/javascript" src="js/canvasjs.min.js"></script>';

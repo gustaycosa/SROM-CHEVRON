@@ -45,8 +45,8 @@ for($i=0; $i<count($Datos); $i++){
             echo json_encode($arreglo);
         ?>
         ;
+        console.log(datos);
         $(document).ready(function() {
-
             var table = $('#grid').DataTable({
                 data:datos,
                 columns: [
@@ -62,7 +62,10 @@ for($i=0; $i<count($Datos); $i++){
                 "createdRow": function ( row, data, index ) {
 					$(row).attr({ id:data.Id_ConceptoCtb});
 					$(row).addClass(data.REF);
-                    if ( data.TF == 'T1' ) {
+                    $(row).addClass(data.TF);
+                    if ( data.TF != 'T1' )
+                          $(row).hide();
+                    /*if ( data.TF == 'T1' ) {
                         $(row).addClass('T1');
                     }
                     else if ( data.TF == 'T2' ) {
@@ -74,12 +77,12 @@ for($i=0; $i<count($Datos); $i++){
                     else if ( data.TF == 'N' ) {
                         $(row).addClass('N');
                         $(row).hide();
-                    }
+                    }*/
                 },
             dom: 'lfBrtip',    
             paging: false,
             searching: true,
-            ordering: true,
+            ordering: false,
             buttons: [
                 {
                     extend: 'copy',
@@ -126,7 +129,7 @@ for($i=0; $i<count($Datos); $i++){
                 },
                 {
                     extend: 'excel',
-                    message: 'PDF creado desde el sistema en linea del tayco.',
+                    message: 'PDF creado desde el sistema en linea.',
                     text: 'XLS',
                     filename: 'vtas_netasfact',
                     extension: '.xlsx', 

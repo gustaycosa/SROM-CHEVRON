@@ -35,7 +35,10 @@
                 <?php echo CargaGif();?>
             </div>
         </div>
-         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuugxmoQ9dyQBfaYExuWAHjKrW1ARalXQ&amp;" async defer></script>
+<!--        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuugxmoQ9dyQBfaYExuWAHjKrW1ARalXQ&callback=initMap" async defer></script>-->
+            <!--API KEY AIzaSyA3Vr5QkRid8gCNM0BplsaSdIMlaiAE3RQ-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3Vr5QkRid8gCNM0BplsaSdIMlaiAE3RQ&callback=initMap"
+        async defer></script>        
     </body>
 
     <?php echo Script1(); ?>
@@ -44,7 +47,7 @@
          var map;
         function initMap() {
             var uluru = {lat: 25.557273199999997, lng: -103.4651153};
-             map = new google.maps.Map(document.getElementById('map'), {zoom: 12, center: uluru});
+            map = new google.maps.Map(document.getElementById('map'), {zoom: 12, center: uluru});
             //var marker = new google.maps.Marker({position: uluru, map: map,title: 'Hello World!',icon:'../../images/green-dot.png'});
         }
         function EndEvents(){

@@ -62,12 +62,6 @@
                             <input type="date" name="txtFechaFin" id="txtFechaFin" value="<?php echo date("Y-m-d");?>" class="form-control" placeholder="Rango Fecha Final">
                         </div>
                     </div>
-                    <div class="col-sm-6 ">
-                        <label for="inputtext3" class="col-sm-3 control-label">elemento:</label>
-                        <div id="ArrayCap" class="col-sm-9 ">
-                            
-                        </div>
-                    </div>
                     
                     <div class="col-sm-6 ">
                         <label for="inputtext3" class="col-sm-3 control-label">Tipo de Autorización:</label>
